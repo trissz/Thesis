@@ -1,0 +1,12 @@
+<h1>Welcome to the Task difficulty level update</h1>
+
+<div class="update_container" id="task_difficulty_level_update_container">
+    <h1>Update Task difficulty level</h1>
+    <form action="/task-difficulty-level/update/" method="POST" class="update_form" id="task_difficulty_level_update_form">
+        <input type="text" id="name" name="name" placeholder="Task difficulty level name" required>
+        <textarea id="description" name="description" placeholder="Task difficulty level description" required></textarea>
+        <label for="is_active">Record is active</label>
+        <input type="checkbox" id="is_active" name="is_active">
+        <button type="submit" id="task_difficulty_level_update_btn">Update</button>
+    </form>
+</div>

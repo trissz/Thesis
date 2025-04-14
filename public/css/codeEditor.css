@@ -1,0 +1,18 @@
+.editor
+{
+    width: 100%;
+    height: 40em;
+    border-radius: 1em;
+    overflow: hidden;
+    box-shadow: 0 1em 3em rgba(0, 0, 0, 0.3);
+    background: #1e1e1e;
+    border: 0.1em solid #ccc;
+    margin-top: 2em;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+.editor_content
+{
+    display: none;
+}

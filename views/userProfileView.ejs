@@ -1,0 +1,13 @@
+<section class="profile_card">
+    <h2>User Profile</h2>
+    <div class="profile_item">
+        <span class="item_key">Name:</span>
+        <span class="item_value"><%= userDo.name %></span>
+    </div>
+    <div class="profile_item">
+        <span class="item_key">Email:</span>
+        <span class="item_value"><%= userDo.email %></span>
+    </div>
+    <button class="logout_btn" onclick="document.getElementById('logoutForm').submit();">Logout</button>
+    <form id="logoutForm" action="/user/logout" method="POST" style="display: none;"></form>
+</section>  

@@ -1,0 +1,26 @@
+<h1>Welcome to the Task creation</h1>
+
+<div class="create_container" id="task_create_container">
+    <h1>Create Task</h1>
+    <form action="/task/create" method="POST" class="create_form" id="task_create_form">
+        <select id="type_id" name="type_id" required></select>
+        <select id="difficulty_level_id" name="difficulty_level_id" required></select>
+        <textarea id="content" name="content" placeholder="Provide the task content" required></textarea>
+        <input id="new_element" name="new_element" placeholder="Add new element" />
+        <button type="button" class="add_element_btn" id="add_element_btn">Add New Element</button>
+
+        <h3>Elements</h3>
+        <div id="elements_container"></div>
+        <input type="hidden" id="elements" name="elements" value="" />
+
+        <h3>Task convention</h3>
+        <div class="task_convention_container" id="task_convention_container"></div>
+
+        <input type="hidden" id="answer" name="answer" value="" />
+
+        <div class="hints_content_container" id="hints_content_container"></div>
+        <input type="hidden" id="hints" name="hints" value="" />
+
+        <button type="submit" id="task_create_btn">Create Task</button>
+    </form>
+</div>

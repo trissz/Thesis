@@ -1,0 +1,63 @@
+body
+{
+    background: linear-gradient(135deg, #6a11cb, #2575fc);
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+#user_login_container
+{
+    width: 50%;
+    max-width: 40em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+    background: #fff;
+    border: var(--border-width) solid #ddd;
+    border-radius: 1em;
+    box-shadow: 0 1em 2em rgba(0, 0, 0, 0.2);
+    text-align: center;
+}
+
+#user_login_form
+{
+    width: 100%;
+}
+
+#user_login_form button
+{
+    width: 100%;
+    margin: 1em 0;
+    border-radius: 0.5em;
+    background: #4070e1;
+    color: #fff;
+    font-size: 1rem;
+    font-weight: bold;
+    transition: background 0.3s ease;
+}
+
+#user_login_form button:hover
+{
+    background: #2a94d1;
+}
+
+.user_create_redirect
+{
+    font-size: 0.9rem;
+    margin-top: 2em;
+    color: #666;
+}
+
+.user_create_redirect a
+{
+    color: #00a482;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.user_create_redirect a:hover
+{
+    text-decoration: underline;
+}

@@ -1,0 +1,20 @@
+:root
+{
+    --background-color-light: #f4f4f4;
+    --background-color-dark: #333;
+    --text-color-light: #f4f4f4;
+    --text-color-dark: #333;
+    --success-color: #28a745;
+    --info-color: #17a2b8;
+    --warning-color: #ffc107;
+    --error-color: #dc3545;
+    --font-size-base: 1rem;
+    --font-size-large: 1.25rem;
+    --font-size-small: 0.875rem;
+    --font-size-extra-small: 0.75rem;
+    --font-weight-normal: 400;
+    --font-weight-bold: 700;
+    --line-height-base: 1.5;
+    --border-radius: 0.25rem;
+    --border-width: 0.1em;
+}

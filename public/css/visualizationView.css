@@ -1,0 +1,5 @@
+.canvas_control_panel_fieldset
+{
+    margin: var(--space-md) auto var(--space-xl) auto;
+    color: black;
+}

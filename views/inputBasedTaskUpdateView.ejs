@@ -1,0 +1,18 @@
+<h1>Welcome to the Input based task update</h1>
+
+<div class="update_container" id="input_based_task_update_container">
+    <h1>Update Input based task</h1>
+    <form action="/input-based-task/update/" method="POST" class="update_form" id="input_based_task_update_form">
+        <select id="difficulty_level_id" name="difficulty_level_id" required></select>
+        <textarea id="content" name="content" placeholder="Provide the instructions or task description" required></textarea>
+        <input id="answer" name="answer" placeholder="Correct answer" required />
+
+        <div class="hints_content_container" id="hints_content_container"></div>
+        <input type="hidden" id="hints" name="hints" />
+
+        <label for="is_active">Record is active</label>
+        <input type="checkbox" id="is_active" name="is_active">
+        
+        <button type="submit" id="input_based_task_update_btn">Update</button>
+    </form>
+</div>

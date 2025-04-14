@@ -1,0 +1,38 @@
+<h1>Welcome to the Algorithm implementation update</h1>
+
+<div class="update_container" id="algorithm_implementation_update_container">
+    <h1>Update Algorithm implementation</h1>
+    <form action="/algorithm-implementation/update/" method="POST" class="update_form" id="algorithm_implementation_update_form">
+        <select id="algorithm_id" name="algorithm_id"></select>
+        <select id="code_language_id" name="code_language_id"></select>
+        <select id="complexity_id" name="complexity_id"></select>
+        <input type="text" id="name" name="name" placeholder="Enter algorithm implementation name" required>
+
+        <div class="editor" id="editor"></div>
+        <textarea class="editor_content" id="editor_content" name="editor_content"></textarea>
+
+        <label for="is_active">Record is active</label>
+        <input type="checkbox" id="is_active" name="is_active">
+
+        <script src="https://unpkg.com/monaco-editor/min/vs/loader.js"></script>
+        <script>
+            require.config({ paths: { 'vs': 'https://unpkg.com/monaco-editor/min/vs' } });
+            require(['vs/editor/editor.main'], function () {
+                const editor = monaco.editor.create(document.getElementById('editor'), {
+                    value: '// Write your algorithm implementation here',
+                    language: 'javascript',
+                    theme: 'vs-dark',
+                });
+
+                const form = document.querySelector('.algorithm_implementation_create_form');
+                const textarea = document.getElementById('editor_content');
+
+                form.addEventListener('submit', () => {
+                    textarea.value = editor.getValue();
+                });
+            });
+        </script>
+        
+        <button type="submit" id="algorithm_implementation_update_btn">Update</button>
+    </form>
+</div>

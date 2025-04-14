@@ -1,0 +1,268 @@
+html, body
+{
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    font-family: Arial, sans-serif;
+}
+
+::-webkit-scrollbar
+{
+    width: 1em;
+}
+
+::-webkit-scrollbar-track
+{
+    background: #e0e0e0;
+    border-radius: 1em;
+}
+
+::-webkit-scrollbar-thumb
+{
+    background: #888;
+    border-radius: 1em;
+    border: 0.3em solid #e0e0e0;
+}
+
+::-webkit-scrollbar-thumb:hover
+{
+    background: #555;
+}
+
+::-ms-scrollbar
+{
+    width: 1em;
+}
+
+main
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex: 1;
+    max-width: 100%;
+    margin: 0;
+    padding: 2em;
+}
+
+h1, h2
+{
+    color: #444;
+    text-align: center;
+}
+
+header nav ul
+{
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    background-color: #333;
+    display: flex;
+}
+
+header nav ul li
+{
+    position: relative;
+}
+
+header nav ul li a
+{
+    color: #fff;
+    padding: 1.4em 2em;
+    text-decoration: none;
+    display: block;
+}
+
+header nav ul li a:hover
+{
+    color: var(--text-color-light);
+    background-color: #575757;
+}
+
+.dropdown_content
+{
+    display: none;
+    position: absolute;
+    min-width: 15em;
+    max-height: 60vh;
+    box-shadow: 0 0.8em 1.6em rgba(0, 0, 0, 0.2);
+    background-color: #333;
+    overflow-y: auto;
+    z-index: 1000;
+}
+
+.dropdown_content li
+{
+    border-bottom: 0.1em solid #ddd;
+}
+
+.dropdown_content li a
+{
+    padding: 1.2em 1.6em;
+    text-decoration: none;
+    display: block;
+    color: white;
+}
+
+.dropdown_content li a:hover
+{
+    background-color: #575757;
+}
+
+.dropdown:hover .dropdown_content
+{
+    display: block;
+}
+
+footer
+{
+    text-align: center;
+    padding: 1em 0;
+    background: #333;
+    color: #fff;
+    font-size: 0.9rem;
+}
+
+button, a.button
+{
+    display: inline-block;
+    text-align: center;
+    vertical-align: middle;
+    padding: 1em 2em;
+    background: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 0.5em;
+    text-decoration: none;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+button:hover, a.button:hover
+{
+    background: #0056b3;
+}
+
+form
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 2em 0;
+}
+
+.input_element
+{
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 1em 0;
+}
+
+label
+{
+    display: block;
+    margin-bottom: 0.3em;
+}
+
+input
+{
+    width: 100%;
+    padding: 1em;
+    border: 0.1em solid #ddd;
+    border-radius: 0.5em;
+}
+
+.container
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 100%;
+    width: fit-content;
+    margin: 0 auto;
+    padding: 1em;
+}
+
+.icon img
+{
+    width: 10em;
+    height: 10em;
+    border: 0.1em solid black;
+}
+
+.rounded_icon img
+{
+    width: 10em;
+    height: 10em;
+    border: 0.1em solid black;
+    border-radius: 50%;
+}
+
+.invisible
+{
+    display: none !important;
+}
+
+#log_messages
+{
+    width: 100%;
+    max-width: 40em;
+    margin: 2em auto;
+    padding: 1em;
+    border: 0.1em solid var(--border-color, #ddd);
+    border-radius: var(--border-radius, 0.5em);
+    background: var(--background-color-light, #f9f9f9);
+    box-shadow: 0 0.5em 1em rgba(0, 0, 0, 0.1);
+    font-size: var(--font-size-base, 1rem);
+    color: var(--text-color-dark, #444);
+    overflow-y: auto;
+    max-height: 20em;
+}
+
+#log_messages .log_entry
+{
+    padding: 0.5em;
+    border-bottom: 0.1em solid var(--border-color, #ddd);
+}
+
+#log_messages .log_entry:last-child
+{
+    border-bottom: none;
+}
+
+#log_messages .log_entry.messages
+{
+    background: #d1ecf1;
+    color: #0c5460;
+    border-left: 0.3em solid #17a2b8;
+}
+
+#log_messages .log_entry.warnings
+{
+    background: #fff3cd;
+    color: #856404;
+    border-left: 0.3em solid #ffc107;
+}
+
+#log_messages .log_entry.errors
+{
+    background: #f8d7da;
+    color: #721c24;
+    border-left: 0.3em solid #dc3545;
+}
+
+#log_messages .log_entry.confirmations
+{
+    background: #fff3cd;
+    color: #36540a;
+    border-left: 0.3em solid #07ff41;
+}

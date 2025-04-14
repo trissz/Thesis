@@ -1,0 +1,17 @@
+<h1>Welcome to the Algorithm implementation creation</h1>
+
+<div class="create_container" id="algorithm_implementation_create_container">
+    <h1>Create Algorithm implementation</h1>
+    <form action="/algorithm-implementation/create" method="POST" class="create_form" id="algorithm_implementation_create_form">
+        <select id="algorithm_id" name="algorithm_id"></select>
+        <select id="code_language_id" name="code_language_id"></select>
+        <select id="complexity_id" name="complexity_id"></select>
+        <input type="text" id="name" name="name" placeholder="Enter algorithm implementation name" required>
+        <textarea id="description" name="description" placeholder="Describe algorithm implementation" required></textarea>
+
+        <div class="editor" id="editor"></div>
+        <textarea class="editor_content" id="code" name="code"></textarea>
+
+        <button type="submit" id="algorithm_implementation_create_btn">Create</button>
+    </form>
+</div>

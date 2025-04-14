@@ -1,0 +1,37 @@
+<h1>Welcome to the Select based task update</h1>
+
+<div class="update_container" id="select_based_task_update_container">
+    <h1>Update Select based task</h1>
+    <form action="/select-based-task/update/" method="POST" class="update_form" id="select_based_task_update_form">
+        <select id="difficulty_level_id" name="difficulty_level_id" required></select>
+        <textarea id="content" name="content" placeholder="Provide the instructions or task description" required></textarea>
+
+        <input id="new_option" name="new_option" placeholder="Add new option" />
+        <button type="button" id="add_option_btn">Add New Option</button>
+
+        <h3>Option elements</h3>
+        <div class="options_elements_container" id="options_elements_container"></div>
+        <input type="hidden" id="options" name="options">
+
+        <h3>Maximum number of selections</h3>
+        <div class="max_selections_container">
+            <button type="button" class="counter_btn" id="decrease_counter_btn">−</button>
+            <input type="number" class="max_selections_input" id="max_selections_input" min="1" max="10" value="3">
+            <button type="button" class="counter_btn" id="increase_counter_btn">+</button>
+        </div>
+
+        <h3>Options list</h3>
+        <ul class="options_list" id="options_list"></ul>
+        <input type="hidden" id="answer" name="answer"/>
+
+        <button type="button" id="clear_selection_btn">Clear Selection</button>
+
+        <div class="hints_content_container" id="hints_content_container"></div>
+        <input type="hidden" id="hints" name="hints" />
+
+        <label for="is_active">Record is active</label>
+        <input type="checkbox" id="is_active" name="is_active">
+
+        <button type="submit" id="select_based_task_update_btn">Update</button>
+    </form>
+</div>

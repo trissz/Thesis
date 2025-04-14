@@ -1,0 +1,27 @@
+<h1>Welcome to the Sort based task update</h1>
+
+<div class="update_container" id="sort_based_task_update_container">
+    <h1>Update Sort based task</h1>
+    <form action="/sort-based-task/update/" method="POST" class="update_form" id="sort_based_task_update_form">
+        <select id="difficulty_level_id" name="difficulty_level_id" required></select>
+        <textarea id="content" name="content" placeholder="Provide the instructions or task description" required></textarea>
+        <input id="new_sortable_list_element" name="new_sortable_list_element" placeholder="Add new element" />
+        <button type="button" class="add_sortable_list_element_btn" id="add_sortable_list_element_btn">Add New Element</button>
+
+        <label for="elements">Elements</label>
+        <div id="elements_container"></div>
+        <input type="hidden" id="elements" name="elements">
+
+        <label for="elements">Correct order</label>
+        <ul class="sortable_list" id="sortable_list"></ul>
+        <input type="hidden" id="answer" name="answer"/>
+
+        <div class="hints_content_container" id="hints_content_container"></div>
+        <input type="hidden" id="hints" name="hints" />
+
+        <label for="is_active">Record is active</label>
+        <input type="checkbox" id="is_active" name="is_active">
+
+        <button type="submit" id="sort_based_task_update_btn">Update</button>
+    </form>
+</div>

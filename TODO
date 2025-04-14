@@ -1,0 +1,20 @@
+- code formatter - check in the future
+- for code editor: submit, output, formatter, configuration storing
+- for visualizations: upload P5.js code (implement checker, use formatter etc.), algorithm steps display (in text), managing bar (step forward/backward, reset)
+- scripts: maybe store script files with CDN
+- *make an interface for the scripts
+- make p5 work !!!!!!!
+- finish tasks -> everything
+- finish task types and tasks logic
+- resource ownership
+- implement account creation requester (maybe separate general user creation, etc...)
+
+- filtering and searching: <input type="text" id="search_input" placeholder="Search <entity>..." oninput="filterList()">
+- leaderboard, XP system
+- coding tasks: are they neccessary?
+- version tracking
+- check if there is a need to store multimedia file urls
+- make estimated time for tasks (maybe)
+- status logic (for feedback, code submission)
+
+- npm prune - if all done

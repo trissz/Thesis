@@ -1,0 +1,59 @@
+.profile_card
+{
+    background: var(--background-color-light);
+    padding: 2em;
+    border-radius: var(--border-radius);
+    box-shadow: 0 0.5em 1em rgba(0, 0, 0, 0.1);
+    text-align: center;
+    max-width: 30em;
+    width: 100%;
+    margin: 2em auto;
+    font-size: var(--font-size-base);
+}
+
+.profile_card h2
+{
+    margin-bottom: 1em;
+    font-size: var(--font-size-large);
+    color: var(--text-color-dark);
+    font-weight: var(--font-weight-bold);
+}
+
+.profile_item
+{
+    margin-bottom: 1em;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.5em;
+    background: var(--background-color-light);
+    border: var(--border-width) solid #ddd;
+    border-radius: var(--border-radius);
+}
+
+.profile_item .item_key
+{
+    font-weight: var(--font-weight-bold);
+    color: var(--text-color-dark);
+    font-size: var(--font-size-small);
+}
+
+.profile_item .item_value
+{
+    font-size: var(--font-size-base);
+    color: var(--text-color-dark);
+}
+
+.logout_btn
+{
+    font-size: var(--font-size-base);
+    border-radius: var(--border-radius);
+    background: var(--error-color);
+    color: var(--text-color-light);
+    transition: background 0.3s;
+}
+
+.logout-button:hover
+{
+    background: #c82333;
+}

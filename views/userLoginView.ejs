@@ -1,0 +1,21 @@
+<h1>Welcome to the User login</h1>
+
+<div id="user_login_container">
+    <h2>Login</h2>
+    <div class="rounded_icon">
+        <img src="/images/profile_image_icon.png" alt="Icon">
+    </div>
+    <form action="/user/login" method="POST" id="user_login_form">
+        <div class="input_element">
+            <input type="email" id="email" name="email" placeholder="&#128231;&nbsp;Email" required> <!-- &#9993; , &#128231 -->
+        </div>
+        <div class="input_element">
+            <input type="password" id="password" name="password" placeholder="&#128274;&nbsp;Password" required> <!-- &#128274; -->
+        </div>
+        <button type="submit" id="user_login_btn">Login</button>
+
+        <p class="user_create_redirect">
+            Do not have an account? <a href="/user/create">Create</a>
+        </p>
+    </form>
+</div>

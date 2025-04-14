@@ -1,0 +1,13 @@
+<h1>Welcome to the Algorithm update</h1>
+
+<div class="update_container" id="algorithm_update_container">
+    <h1>Update Algorithm</h1>
+    <form action="/algorithm/update/" method="POST" class="update_form" id="algorithm_update_form">
+        <select id="category_id" name="category_id"></select>
+        <select id="difficulty_level_id" name="difficulty_level_id"></select>
+        <input type="text" id="name" name="name" placeholder="Enter algorithm name" required>
+        <label for="is_active">Record is active</label>
+        <input type="checkbox" id="is_active" name="is_active">
+        <button type="submit" id="algorithm_update_btn">Update</button>
+    </form>
+</div>

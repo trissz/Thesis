@@ -1,0 +1,14 @@
+<h1>Welcome to the Code language update</h1>
+
+<div class="update_container" id="code_language_update_container">
+    <h1>Update Code language</h1>
+    <form action="/code-language/update/" method="POST" class="update_form" id="code_language_update_form">
+        <input type="text" id="name" name="name" placeholder="Code language name" required>
+        <input type="text" id="notation" name="notation" placeholder="Code language notation" required>
+        <input type="text" id="key_string" name="key_string" placeholder="Code language key string" required>
+        <textarea id="description" name="description" placeholder="Code language description" required></textarea>
+        <label for="is_active">Record is active</label>
+        <input type="checkbox" id="is_active" name="is_active">
+        <button type="submit" id="code_language_update_btn">Update</button>
+    </form>
+</div>

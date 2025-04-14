@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title><%= title || "Thesis" %></title>
+
+    <link rel="stylesheet" href="/css/var.css">
+    <link rel="stylesheet" href="/css/common.css">
+    <link rel="stylesheet" href="/css/loadingSpinner.css">
+    <link rel="stylesheet" href="/css/messageSystem.css">
+    <link rel="stylesheet" href="/css/confirmationPanel.css">
+
+    <% if ( typeof pageStyles !== 'undefined' && Array.isArray(pageStyles) ) { %>
+        <% pageStyles.forEach(style => { %>
+            <link rel="stylesheet" href="/css/<%= style %>.css">
+        <% }); %>
+    <% } %>
+
+    <% if ( typeof pageLibraries !== 'undefined' && Array.isArray(pageLibraries) ) { %>
+        <% pageLibraries.forEach(pageLibrary => { %>
+            <script src="/lib/<%= pageLibrary.directory ? pageLibrary.directory + '/' : '' %><%= pageLibrary.script %>.js"></script>
+        <% }); %>
+    <% } %>
+
+    <script src="https://cdn.tiny.cloud/1/vlv7a1r29e97zmygp2y5h81sfjt061op4oxk8kvvlpv7vcos/tinymce/7/tinymce.min.js" referrerpolicy="origin"></script>
+    <!--<script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.8.0/addons/p5.dom.js"></script>-->
+    <!--<script src="https://cdn.jsdelivr.net/npm/p5/lib/addons/p5.dom.js"></script>-->
+    <script src="/js/var.js"></script>
+    <script src="/js/customEventsHelper.js"></script>
+    <script src="/js/utility.js"></script>
+    <script src="/js/fetch.js"></script>
+    <script src="/js/common.js"></script>
+    <script src="/js/messageSystem.js"></script>
+    <script src="/js/confirmationPanel.js"></script>
+
+    <% if ( typeof pageScripts !== 'undefined' && Array.isArray(pageScripts) ) { %>
+        <% pageScripts.forEach(script => { %>
+            <script src="/js/<%= script %>.js"></script>
+        <% }); %>
+    <% } %>
+</head>
+<body>
+    <header>
+        <%- include('partials/header') %>
+    </header>
+    
+    <main>
+        <%- body %>
+        <div id="log_messages"></div>
+    </main>
+
+    <footer>
+        <%- include('partials/footer') %>
+    </footer>
+</body>
+</html>

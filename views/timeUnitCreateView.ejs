@@ -1,0 +1,11 @@
+<h1>Welcome to the Time unit creation</h1>
+
+<div class="create_container" id="time_unit_create_container">
+    <h1>Create Time unit</h1>
+    <form action="/time-unit/create" method="POST" class="create_form" id="time_unit_create_form">
+        <input type="text" id="name" name="name" placeholder="Enter time unit name" required>
+        <input type="text" id="notation" name="notation" placeholder="Enter time unit notation" required>
+        <input type="number" id="seconds_equivalent" name="seconds_equivalent" min="0" placeholder="Enter time unit seconds equivalent" required>
+        <button type="submit" id="time_unit_create_btn">Create</button>
+    </form>
+</div>

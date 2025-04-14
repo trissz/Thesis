@@ -1,0 +1,12 @@
+<h1>Welcome to the Feedback update</h1>
+
+<div class="update_container" id="feedback_update_container">
+    <h1>Update Feedback</h1>
+    <form action="/feedback/update/" method="POST" class="update_form" id="feedback_update_form">
+        <input type="text" id="topic" name="topic" placeholder="Enter feedback topic" required>
+        <textarea id="content" name="content" placeholder="Enter feedback content" required></textarea>
+        <label for="is_active">Record is active</label>
+        <input type="checkbox" id="is_active" name="is_active">
+        <button type="submit" id="feedback_update_btn">Update</button>
+    </form>
+</div>

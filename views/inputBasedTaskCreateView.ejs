@@ -1,0 +1,15 @@
+<h1>Welcome to the Input based task creation</h1>
+
+<div class="create_container" id="input_based_task_create_container">
+    <h1>Create Input-Based Task</h1>
+    <form action="/input-based-task/create" method="POST" class="create_form" id="inpt_based_task_create_form">
+        <select id="difficulty_level_id" name="difficulty_level_id" required></select>
+        <textarea id="content" name="content" placeholder="Provide the instructions or task description" required></textarea>
+        <input id="answer" name="answer" placeholder="Correct answer" required />
+
+        <div class="hints_content_container" id="hints_content_container"></div>
+        <input type="hidden" id="hints" name="hints" />
+
+        <button type="submit" id="input_based_task_create_btn">Create Task</button>
+    </form>
+</div>

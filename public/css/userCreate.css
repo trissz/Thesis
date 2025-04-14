@@ -1,0 +1,22 @@
+.user_login_redirect
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 0.9rem;
+    margin-top: 2em;
+    color: #666;
+}
+
+.user_login_redirect a
+{
+    color: #576ad4;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.user_login_redirect a:hover
+{
+    text-decoration: underline;
+}

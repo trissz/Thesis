@@ -1,0 +1,19 @@
+.correct_answer
+{
+    color: #155724 !important;
+    background-color: #d4edda !important;
+    border: 0.1em solid #c3e6cb !important;
+    padding: 1em;
+    border-radius: 0.5em;
+    margin-top: 1em;
+}
+
+.incorrect_answer
+{
+    color: #721c24 !important;
+    background-color: #f8d7da !important;
+    border: 0.1em solid #f5c6cb !important;
+    padding: 1em;
+    border-radius: 0.5em;
+    margin-top: 1em;
+}

@@ -1,0 +1,54 @@
+<div class="view_container" id="select_based_task_view_container">
+    <div class="task_header">
+        <div class="task_content_container" id="task_content_container">
+            <div class="task_content_card">
+                <p id="task_content"></p>
+            </div>
+
+            <div class="task_difficulty_level_badge" id="task_difficulty_level_badge">
+                <span class="task_difficulty_level_name" id="task_difficulty_level_name"></span>
+            </div>
+        </div>
+    </div>
+
+    <div class="selectable_area">
+        <div class="area_header">
+            <span class="area_header_item section_info_container" id="selectable_section_info_container"></span>
+
+            <div class="area_header_item max_selections_container">Max selections: <span id="max_selections"></span></div>
+
+            <div class="area_header_item shuffle_list_container">
+                <button type="button" class="shuffle_selectable_list_btn" id="shuffle_selectable_list_btn">
+                    <svg class="svg_icon" id="shuffle_icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16">
+                        <path fill-rule="evenodd" d="M0 3.5A.5.5 0 0 1 .5 3H1c2.202 0 3.827 1.24 4.874 2.418.49.552.865 1.102 1.126 1.532.26-.43.636-.98 1.126-1.532C9.173 4.24 10.798 3 13 3v1c-1.798 0-3.173 1.01-4.126 2.082A9.6 9.6 0 0 0 7.556 8a9.6 9.6 0 0 0 1.317 1.918C9.828 10.99 11.204 12 13 12v1c-2.202 0-3.827-1.24-4.874-2.418A10.6 10.6 0 0 1 7 9.05c-.26.43-.636.98-1.126 1.532C4.827 11.76 3.202 13 1 13H.5a.5.5 0 0 1 0-1H1c1.798 0 3.173-1.01 4.126-2.082A9.6 9.6 0 0 0 6.444 8a9.6 9.6 0 0 0-1.317-1.918C4.172 5.01 2.796 4 1 4H.5a.5.5 0 0 1-.5-.5"/>
+                        <path d="M13 5.466V1.534a.25.25 0 0 1 .41-.192l2.36 1.966c.12.1.12.284 0 .384l-2.36 1.966a.25.25 0 0 1-.41-.192m0 9v-3.932a.25.25 0 0 1 .41-.192l2.36 1.966c.12.1.12.284 0 .384l-2.36 1.966a.25.25 0 0 1-.41-.192"/>
+                    </svg>
+                </button>
+            </div>
+        </div>
+        
+        <div class="options_list" id="options_list"></div>
+
+        <input type="hidden" id="answer" name="answer"/>
+    </div>
+
+    <div class="hints_panel">
+        <div class="hints_container" id="hints_container"></div>
+    </div>
+
+    <div class="task_options">
+        <div class="action_buttons">
+            <button type="button" id="give_new_hint_btn" class="hint_button">
+                <svg class="hint_icon" viewBox="0 0 24 24">
+                    <path d="M11 18h2v-2h-2v2zm1-16C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8zm0-14c-2.21 0-4 1.79-4 4h2c0-1.1.9-2 2-2s2 .9 2 2c0 2-3 1.75-3 5h2c0-2.25 3-2.5 3-5 0-2.21-1.79-4-4-4z"/>
+                </svg>
+
+                Get Hint
+            </button>
+
+            <button type="button" id="check_solution_btn" class="check_button">Verify Solution</button>
+        </div>
+    </div>
+
+    <div class="solution_result_container" id="solution_result_container"></div>
+</div>

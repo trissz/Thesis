@@ -1,0 +1,20 @@
+<h1>Welcome to the Visualization update</h1>
+
+<div class="update_container" id="visualization_update_container">
+    <h1>Update Visualization</h1>
+    <form action="/visualization/update/" method="POST" class="update_form" id="visualization_update_form">
+        <input type="text" id="title" name="title" placeholder="Visualization title" required>
+        <textarea id="description" name="description" placeholder="Visualization description" required></textarea>
+
+        <label for="script_file">Upload Visualization Script File (.js) (optional):</label>
+        <input type="file" id="script_file" name="script_file" accept=".js">
+
+        <div class="editor" id="editor"></div>
+        <textarea class="editor_content" id="script_code" name="script_code"></textarea>
+
+        <label for="is_active">Record is active</label>
+        <input type="checkbox" id="is_active" name="is_active">
+
+        <button type="submit" id="visualization_update_btn">Update</button>
+    </form>
+</div>

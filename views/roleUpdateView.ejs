@@ -1,0 +1,12 @@
+<h1>Welcome to the Role update</h1>
+
+<div class="update_container" id="role_update_container">
+    <h1>Update Role</h1>
+    <form action="/role/update/" method="POST" class="update_form" id="role_update_form">
+        <input type="text" id="name" name="name" placeholder="Role name" required>
+        <textarea id="description" name="description" placeholder="Role description" required></textarea>
+        <label for="is_active">Record is active</label>
+        <input type="checkbox" id="is_active" name="is_active">
+        <button type="submit" id="role_update_btn">Update</button>
+    </form>
+</div>

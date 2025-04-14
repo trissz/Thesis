@@ -1,0 +1,11 @@
+<h1>Upload a File</h1>
+
+<div class="upload_comtainer" id="multimedia_upload_container">
+    <form action="/multimedia/upload" method="POST" enctype="multipart/form-data" class="upload_form" id="multimedia_upload_form">
+        <label for="category_id">Select multimedia category</label>
+        <select id="category_id" name="category_id" required></select>
+        <label for="file">Choose a file:</label>
+        <input type="file" id="file" name="file" required>
+        <button type="submit">Upload</button>
+    </form>
+</div>

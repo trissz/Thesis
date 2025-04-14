@@ -1,0 +1,50 @@
+body
+{
+    background: linear-gradient(135deg, #ff7e5f, #feb47b);
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+#error_container
+{
+    max-width: 50em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 3em 5em;
+    border-radius: 2em;
+    box-shadow: 0 0.5em 1em rgba(0, 0, 0, 0.2);
+    background: var(--background-color-light);
+}
+
+#error_title
+{
+    margin: 0 0 2em;
+    color: #e63946;
+}
+
+#error_message
+{
+    margin: 1em 0;
+    font-size: 1.2em;
+}
+
+#home_redirect_link
+{
+    display: inline-block;
+    margin-top: 2em;
+    padding: 1em 2em;
+    text-decoration: none;
+    background: #e63946;
+    color: white;
+    border-radius: 1em;
+    font-size: 1em;
+    font-weight: bold;
+    transition: all 0.3s ease;
+}
+
+#home_redirect_link:hover
+{
+    background: #b22c3a;
+}

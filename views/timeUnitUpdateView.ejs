@@ -1,0 +1,13 @@
+<h1>Welcome to the Time unit update</h1>
+
+<div class="update_container" id="time_unit_update_container">
+    <h1>Update Time unit</h1>
+    <form action="/time-unit/update/" method="POST" class="update_form" id="time_unit_update_form">
+        <input type="text" id="name" name="name" placeholder="Enter time unit name" required>
+        <input type="text" id="notation" name="notation" placeholder="Enter time unit notation" required>
+        <input type="number" id="seconds_equivalent" name="seconds_equivalent" placeholder="Enter time unit seconds equivalent" required>
+        <label for="is_active">Record is active</label>
+        <input type="checkbox" id="is_active" name="is_active">
+        <button type="submit" id="time_unit_update_btn">Update</button>
+    </form>
+</div>

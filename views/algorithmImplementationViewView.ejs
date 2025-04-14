@@ -1,0 +1,67 @@
+<div class="view_container" id="algorithm_implementation_view_container">
+    <div class="algorithm_implementation_view">
+        <header class="algorithm_implementation_header">
+            <h1 class="algorithm_implementation_name" id="algorithm_implementation_name"></h1>
+
+            <div class="algorithm_implementation_meta">
+                <span class="code_language_notation" id="code_language_notation"></span>
+                <span class="algorithm_complexity_badge" id="algorithm_complexity_notation"></span>
+            </div>
+
+            <p class="algorithm_name" id="algorithm_name"></p>
+            <p class="description" id="description"></p>
+        </header>
+    
+        <div class="algorithm_implementation_content_grid">
+            <section class="algorithm_implementation_code_section">
+                <div class="code_header">
+                    <h3>Implementation Code</h3>
+
+                    <button class="copy_btn">
+                        <svg class="copy_icon" viewBox="0 0 24 24">
+                            <path d="M19 21H8V7h11m0-2H8a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h11a2 2 0 0 0 2-2V7a2 2 0 0 0-2-2m-3-4H4a2 2 0 0 0-2 2v14h2V3h12V1z"/>
+                        </svg>
+                    </button>
+                </div>
+
+                <pre class="code_block"><code class="code_text" id="code_text"></code></pre>
+            </section>
+    
+            <aside class="algorithm_implementation_details_sidebar">
+                <div class="detail_card">
+                    <h4>Algorithm Details</h4>
+
+                    <div class="detail_item">
+                        <span class="detail_label">Category:</span>
+                        <span class="detail_value" id="algorithm_category_name"></span>
+                    </div>
+
+                    <div class="detail_item">
+                        <span class="detail_label">Complexity:</span>
+                        <span class="detail_value" id="algorithm_complexity_name"></span>
+                    </div>
+                </div>
+    
+                <div class="detail_card">
+                    <h4>Language Details</h4>
+
+                    <div class="detail_item">
+                        <span class="detail_label">Language:</span>
+                        <span class="detail_value" id="code_language_name"></span>
+                    </div>
+
+                    <div class="detail_item">
+                        <span class="detail_label">Key:</span>
+                        <span class="detail_value" id="code_language_key_string"></span>
+                    </div>
+
+                    <p class="code_language_description" id="code_language_description"></p>
+                </div>
+            </aside>
+        </div>
+    
+        <div class="algorithm_implementation_footer">
+            <button class="action_btn" onclick="window.location.href = `/algorithm/view/${algorithmImplementation.algorithmId}`;">Back to Algorithm</button>
+        </div>
+    </div>
+</div>

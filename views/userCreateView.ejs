@@ -1,0 +1,17 @@
+<h1>Welcome to the User creation</h1>
+
+<div class="create_container" id="user_create_container">
+    <h1>Signup</h1>
+    <form action="/user/create" method="POST" class="create_form" id="user_create_form">
+        <input type="text" id="name" name="name" placeholder="Enter your name" required>
+        <input type="email" id="email" name="email" placeholder="Enter your email" required>
+        <input type="password" id="password" name="password" placeholder="Create a password" required>
+        <input type="password" id="password_again" name="password_again" placeholder="Confirm your password" required>
+        <label for="role_id">Select role</label>
+        <select id="role_id" name="role_id" required></select>
+        <button type="submit" id="user_create_btn">Signup</button>
+    </form>
+    <p class="user_login_redirect">
+        Already have an account? <a href="/user/login">Login</a>
+    </p>
+</div>
